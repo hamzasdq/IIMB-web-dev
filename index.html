@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspire Consultancy Services - Ranchi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header id="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="#home" class="logo-link">
+                    <img src="images/logo.png" alt="Inspire Consultancy Services Logo" class="logo">
+                    </a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Empowering Individuals and Businesses through Strategic Consultancy</h1>
+            <p>Career Guidance | Business Solutions | Training | IT Consulting</p>
+            <a href="#contact" class="btn btn-primary">Request Consultation</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/about-us.jpg" alt="Professional business consulting meeting">
+                </div>
+                <div class="about-text">
+                    <h3>Our Story & Mission</h3>
+                    <p>Inspire Consultancy Services, based in the heart of Ranchi, India, was founded with a singular vision: to empower individuals to achieve their career aspirations and to assist businesses in navigating the complexities of the modern market. We believe in transformative guidance and strategic solutions that yield tangible results.</p>
+                    <p>Our mission is to be a catalyst for positive change, offering bespoke consultancy services that are not only effective but also ethically grounded. We strive to build lasting relationships with our clients, fostering growth, innovation, and success through personalized support and expert advice.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-user-tie"></i></div>
+                    <h3>Career Counseling</h3>
+                    <p>Personalized guidance to help you navigate your career path with confidence.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>Business Consulting</h3>
+                    <p>Strategic insights and solutions to optimize your business operations and growth.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>IT & Tech Solutions</h3>
+                    <p>Modern technology consulting to enhance your digital presence and efficiency.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <h3>Corporate Training & Seminars</h3>
+                    <p>Tailored training programs to upskill your team and foster professional development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section section-padding">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial-slide active">
+                    <p>"Inspire Consultancy provided invaluable insights for our startup. Their business strategies were spot on!"</p>
+                    <h4>- Priya Sharma</h4>
+                    <span>CEO, TechNova Solutions</span>
+                </div>
+                <div class="testimonial-slide">
+                    <p>"The career counseling sessions were incredibly helpful. I found my dream job thanks to their guidance."</p>
+                    <h4>- Rahul Kumar</h4>
+                    <span>Software Engineer</span>
+                </div>
+                <div class="testimonial-slide">
+                    <p>"Excellent corporate training! Our team's productivity has significantly improved after their seminar."</p>
+                    <h4>- Anjali Mehta</h4>
+                    <span>HR Manager, GrowthCorp</span>
+                </div>
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/gallery1.jpg" alt="Workshop Image 1" onclick="openModal('images/gallery1.jpg')">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery2.jpg" alt="Seminar Image 1" onclick="openModal('images/gallery2.jpg')">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery3.jpg" alt="Workshop Image 2" onclick="openModal('images/gallery3.jpg')">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery4.jpg" alt="Seminar Image 2" onclick="openModal('images/gallery4.jpg')">
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <div id="imageModal" class="modal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="apikey" value="9521d260-54a3-4a9a-82d0-0e41e743d144">
+                        <input type="checkbox" name="botcheck" id="botcheck" style="display: none;">
+
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Form</button>
+                        <div id="form-status"></div>
+                    </form>
+                </div>
+                <div class="contact-details">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Inspire Consultancy Services<br>123 Business Hub, Main Road<br>Ranchi, Jharkhand, India - 834001</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+911234567890">+91 123 456 7890</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@inspireconsultancy.co.in">info@inspireconsultancy.co.in</a></p>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117223.6720899998!2d85.25049004422475!3d23.34316842888612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e104aa5db7dd%3A0xdc54295cb6315404!2sRanchi%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1678886056684!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer bg-dark">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h4>Inspire Consultancy Services</h4>
+                    <p>Empowering your growth through strategic insights and dedicated support.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Us</h4>
+                    <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Inspire Consultancy Services. All Rights Reserved. Designed with <i class="fas fa-heart" style="color: red;"></i> in Ranchi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
